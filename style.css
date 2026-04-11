@@ -1,0 +1,77 @@
+:root {
+  /* 🧱 Base */
+  --bg-main: #0f172a;
+  --bg-header: #111827;
+  --bg-card: #1e293b;
+  --border: #334155;
+
+  /* ✍️ Texto */
+  --text-main: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  /* 🎯 Destaque (principal) */
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+
+  /* ✅ Estados */
+  --success: #22c55e;
+  --danger: #ef4444;
+  --danger-hover: #dc2626;
+
+  /* ✨ Extras */
+  --shadow: rgba(0, 0, 0, 0.3);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: var(--bg-main);
+}
+/* Header */
+.header{
+background-color: var(--bg-header);
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0px 3px 8px var(--primary);
+}
+.title{
+    color: var(--text-main);
+    max-width: 60%;
+}
+/* Div input */
+.divinput{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#taskInput{
+    width: 50%;
+    padding: 10px;
+    border-radius: 15px;
+}
+/* Tasks */
+.parent{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+.divtasks{
+    background-color: var(--bg-card);
+    padding: 10px;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.taskcontent{
+    background-color: #374357;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px black;
+}
